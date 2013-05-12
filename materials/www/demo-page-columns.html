@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>Refuge | Data should be yours !</title>
-        <meta name="description" content="description">
-        <meta name="keywords" content="keywords">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-		<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-		
-    </head>
-    <body>
-		<div class="container">
-			<header class="header">
-				<a href="index.html" class="a-backtohome"></a>
-				<nav>
-					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="refuge-intro.html" class="selected">Refuge</a></li>
-						<li><a href="devices.html">Devices</a>
+<head>
+	<title>Refuge | Data should be yours !</title>
+	<meta name="description" content="description">
+	<meta name="keywords" content="keywords">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+	<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div class="container">
+		<header class="header">
+			<a href="index.html" class="a-backtohome"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="refuge-intro.html">Refuge</a></li>
+					<li><a href="devices.html">Devices</a>
 							<!--<ul class="ss-menu">
 								<li><a href="#">The Refuge Box</a></li>
 								<li><a href="#">Refuge for Android</a></li>
@@ -37,138 +37,124 @@
 			<section class="page">
 				<nav class="secondary-nav">
 					<ul>
-						<li><a href="#" class="a-btn-small selected">Intro</a></li>
-						<li><a href="#" class="a-btn-small">Features</a></li>
+						<li><a href="#" class="a-btn-small selected">Colonnes</a></li>
+						<li><a href="#" class="a-btn-small">Typographie</a></li>
 						<li><a href="#" class="a-btn-small">Modules</a></li>
 					</ul>
 				</nav>
-				<article class="intro">
-					<div class="whole">
-						<div class="wrap">
-							<h2>What’s Refuge ?</h2>
-							<p class="p-big">Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit. Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+				<article>
+					<div class="columns">
+						<div class="whole">
+							<h2>Comment utiliser les colonnes ?</h2>
+							<p class="p-big">Pour utiliser le système de colonnes, il faut toujours encapsuler un set de colonnes dans une div avec la class : <strong>.columns</strong></p>
+							<p>Ensuite, vous pouvez jouer avec les combinaisons suivante : </p>
+							<ul>
+								<li><strong>.whole :</strong> définit une colonne qui prend toute la largeur de son parent (et bénéficie  d'un clear:both)</li>
+								<li><strong>.one-half :</strong> définit une colonne 1/2</li>
+								<li><strong>.one-third :</strong> définit une colonne 1/3</li>
+								<li><strong>.two-third :</strong> définit une colonne 2/3</li>
+								<li><strong>.one-fourth :</strong> définit une colonne 1/4</li>
+								<li><strong>.three-fourth :</strong> définit une colonne 3/4</li>
+							</ul>
 						</div>
 					</div>
-					<div class="one-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
+					<div class="columns">
+						<div class="whole">
+							<h2>Exemples</h2>
+						</div>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
 							<img src="img/demo/HTML5_Logo_512.png" alt="HTML5 Logo 512">
 						</div>
-					</div>
-					<div class="one-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
+							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
+							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+						</div>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
+							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
+							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+						</div>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
 					</div>
-					<div class="one-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
-							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
-							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
-						</div>
-					</div>
-					<div class="one-fourth last">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
-							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
-							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<div class="two-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>2/4</span></h3>
+					<div class="columns">
+						<div class="one-half">
+							<h3>Bloc <span>2/4</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
-					</div>
-					<div class="one-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
+							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
+							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+						</div>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
 					</div>
-					<div class="one-fourth last">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
-							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
-							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<div class="three-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>3/4</span></h3>
+					<div class="columns">
+						<div class="three-fourth">
+							<h3>Bloc <span>3/4</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
-					</div>
-					<div class="one-fourth">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/4</span></h3>
+						<div class="one-fourth">
+							<h3>Bloc <span>1/4</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
 					</div>
-					<div class="clear"></div>
-					<div class="one-third">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/3</span></h3>
+					<div class="columns">
+						<div class="one-third">
+							<h3>Bloc <span>1/3</span></h3>
+							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
+							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+						</div>
+						<div class="one-third">
+							<h3>Bloc <span>1/3</span></h3>
+							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
+							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+						</div>
+						<div class="one-third">
+							<h3>Bloc <span>1/3</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
 					</div>
-					<div class="one-third">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/3</span></h3>
-							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
-							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
-						</div>
-					</div>
-					<div class="one-third last">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/3</span></h3>
-							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
-							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
-						</div>
-					</div>
-					<div class="clear"></div>
-					<div class="two-third">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>2/3</span></h3>
+					<div class="columns">
+						<div class="two-third">
+							<h3>Bloc <span>2/3</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
-					</div>
-					<div class="one-third last">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/3</span></h3>
+						<div class="one-third">
+							<h3>Bloc <span>1/3</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
 					</div>
-					<div class="clear"></div>
-					<div class="one-half">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/2</span></h3>
+					<div class="columns">
+						<div class="one-half">
+							<h3>Bloc <span>1/2</span></h3>
+							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
+							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
+						</div>
+						<div class="one-half">
+							<h3>Bloc <span>1/2</span></h3>
 							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
 							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
 						</div>
 					</div>
-					<div class="one-half last">
-						<div class="wrap">
-							<h3><div></div>Bloc <span>1/2</span></h3>
-							<p>Refuge eget condimentum justo. <strong>Aenean iaculis consequat luctus</strong>. Proin in elementum urna. Etiam eget purus metus. Nam tincidunt mauris eget turpis volutpat ac pulvinar massa suscipit.</p>
-							<p>Donec imperdiet velit vel est pellentesque nec feugiat turpis egestas.</p>
-						</div>
-					</div>
-					<div class="clear"></div>
 				</article>
 			</section>
 			<section class="latest-tweets">
@@ -182,7 +168,7 @@
 				<div class="wrap-footer">
 					<div class="one-third">
 						<article>
-							<h2><div></div><span>Mailing</span> list</h2>
+							<h2><span>Mailing</span> list</h2>
 							<form class="mailing-list">
 								<input type="text" />
 								<input type="submit" value="Send" />
@@ -192,7 +178,7 @@
 					</div>
 					<div class="one-third">
 						<article>
-							<h2><div></div>More <span>info</span></h2>
+							<h2>More <span>info</span></h2>
 							<ul>
 								<li><a href="#">Refuge</a></li>
 								<li><a href="#">Devices</a></li>
@@ -203,9 +189,9 @@
 							</ul>
 						</article>
 					</div>
-					<div class="one-third last">
+					<div class="one-third">
 						<article>
-							<h2><div></div><span>Community</span> box</h2>
+							<h2><span>Community</span> box</h2>
 							<ul>
 								<li><a href="#" class="link-twitter-account"><span></span>Twitter</a></li>
 								<li><a href="#" class="link-gplus-account"><span></span>Google +</a></li>
@@ -213,10 +199,9 @@
 							</ul>
 						</article>
 					</div>
-					<div class="clear"></div>
 					<span class="copyrights">2013 © Refuge. Designed by <a href="http://www.lolograph.com" target="_blank">lolograph</a></span>
 				</div>
 			</footer>
 		</div>
 	</body>
-</html>
+	</html>
