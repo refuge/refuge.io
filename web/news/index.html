@@ -1,0 +1,21 @@
+---
+layout: default
+title: News
+---
+            <section class="page">
+                <article>
+                    {% for post in site.posts %}
+                    <div class="one-fourth">
+                        <div class="wrap">
+                            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                        </div>
+                    </div>
+                    <div class="three-fourth">
+                        <div class="wrap">
+                            {{ post.content }}
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    {% endfor %}
+                </article>
+            </section>

@@ -1,0 +1,16 @@
+---
+layout: default
+---
+    <section class="post">
+        <article>
+            <div class="whole">
+                <div class="wrap">
+                    <h1>{{ page.title }}</h1>
+                    <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}</time>
+                </div>
+                <div class="content">
+                    {{content}}
+                </div>
+            </div>
+        </article>
+    </section>

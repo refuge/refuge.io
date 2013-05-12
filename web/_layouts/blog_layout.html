@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container-fluid" style="margin-top: 60px;">
+  <div class="row-fluid">
+    <div class="span2 well">
+      <ul class="unstyled">
+    {% for post in site.posts %}
+      <li><h6>&raquo; <a href="{{ post.url }}">{{ post.title }}</a></h6></li>
+    {% endfor %}
+      </ul>
+    </div>
+    <div class="span10">
+      {{ content }}
+    </div>
+</div>

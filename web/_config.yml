@@ -1,0 +1,3 @@
+
+exclude: ['.git', 'import_blog_into_jekyll']
+

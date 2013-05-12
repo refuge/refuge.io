@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Refuge | Data should be yours ! - Roadmap 20121218</title>
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <a href="/" class="a-backtohome"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/details/">Refuge</a></li>
+                        <li><a href="/devices/">Devices</a>
+                            <!--<ul class="ss-menu">
+                                <li><a href="#">The Refuge Box</a></li>
+                                <li><a href="#">Refuge for Android</a></li>
+                                <li><a href="#">Refuge for iOS</a></li>
+                            </ul>-->
+                        </li>
+                        <li><a href="/download/">Download</a></li>
+                        <li><a href="/project/">Project</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/community/">Community</a></li>
+                        <li><a href="/shop/">Shop</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <section class="post">
+        <article>
+            <div class="whole">
+                <div class="wrap">
+                    <h1>Roadmap 20121218</h1>
+                    <time class="date" datetime="2012-12-18T00:00:00+01:00">18 December 2012</time>
+                </div>
+                <div class="content">
+                    <p>Ideas and points to be developped in the coming weeks/months.</p>
+
+<h2 id='attendees'>Attendees</h2>
+
+<ul>
+<li>Benoît Chesneau</li>
+
+<li>Nicolas Dufour</li>
+</ul>
+
+<h2 id='discussed_points'>Discussed points</h2>
+
+<p>The general idea is: Couchdb is our model, but we feel it&#8217;s not enough for what we need. It&#8217;s time to move on!</p>
+
+<h3 id='blanket__document_api'>blanket - document API</h3>
+
+<p>Document API able to manage document &#8220;a la&#8221; couchdb.</p>
+
+<p>Would have to be generic enough to be able to use the following:</p>
+
+<ul>
+<li><a href='https://github.com/basho/eleveldb'>eleveld</a></li>
+
+<li><a href='https://github.com/basho/bitcask'>bitcask</a></li>
+
+<li><a href='https://github.com/krestenkrab/hanoidb'>hanoidb</a></li>
+</ul>
+
+<h3 id='attachments__blobs'>attachments / blobs</h3>
+
+<p>Couchdb attachments are known to be badly managed. The idea is to externalize the attachments from the .couch file with different backends. Each attachment would also have a document related to it.</p>
+
+<p>The idea is to make sure Refuge is a true document oriented database in which a blob/attachment is the document and the the &#8220;couchdb&#8221; document is the metadata associated with the blob.</p>
+
+<p>Nothing forbids to have many blobs referenced by many &#8220;couchdb&#8221; documents. On the other hand, only one blob with a given content can exist in the database.</p>
+
+<h3 id='handler_replicate'>handler replicate</h3>
+
+<p>CouchDB replication is a protocol first. We should follow that protocol whatsoever so that we can replicate between:</p>
+
+<ul>
+<li>Refuge &lt;-&gt; Refuge</li>
+
+<li>Refuge &lt;-&gt; CouchdB</li>
+</ul>
+
+<h3 id='other_points'>Other points</h3>
+
+<h4 id='couch_tree_to_revisit'>couch_tree to revisit</h4>
+
+<p>And specially to see if <a href='https://github.com/benoitc/couchdb/blob/master/src/couchdb/couch_key_tree.erl'>couch_key_tree</a> can be salvaged.</p>
+
+<h4 id='trying_to_have_everything_in_erlang'>Trying to have everything in erlang</h4>
+
+<ul>
+<li>
+<p><a href='https://github.com/refuge/jiffy'>jiffy</a> -&gt; <a href='https://github.com/talentdeficit/jsx'>jsx</a>.</p>
+</li>
+
+<li>
+<p>icu made optional or can be replaced to erlang implementation (to decide). Refs:</p>
+
+<ul>
+<li><a href='https://github.com/erlang-unicode/ux'>https://github.com/erlang-unicode/ux</a></li>
+
+<li><a href='https://github.com/erlang-unicode/ucol'>https://github.com/erlang-unicode/ucol</a></li>
+
+<li><a href='https://github.com/erlang-unicode/i18n'>https://github.com/erlang-unicode/i18n</a></li>
+</ul>
+</li>
+</ul>
+
+<h2 id='action_items'>Action items</h2>
+
+<h3 id='generic_api'>Generic API</h3>
+
+<p>API to access to the documents stored in Refuge.</p>
+
+<p>application name: Blanket.</p>
+
+<h3 id='blob_server'>Blob Server</h3>
+
+<p>The blob server is a replacement for the attachments in couchdb. A blob is set of bytes in a given format. It&#8217;s uniquely idetifiable by a content hash set by the client.</p>
+
+<p>Backends:</p>
+
+<ul>
+<li>haystack</li>
+
+<li>cloud file</li>
+
+<li>s3</li>
+</ul>
+
+<p>Note: Need to see how we can store the configuration (per node? per db?).</p>
+
+<p>application name: TBD.</p>
+
+<h3 id='trust_protocol'>Trust protocol</h3>
+
+<ul>
+<li>
+<p>application name for the discovery module: beacon.</p>
+</li>
+
+<li>
+<p>need to describe in details the protocol between two nodes.</p>
+</li>
+</ul>
+
+<h3 id='web_site'>Web Site</h3>
+
+<ul>
+<li>
+<p>use cases to collect and describe.</p>
+</li>
+
+<li>
+<p>need to have the following sections:</p>
+
+<ul>
+<li>documentation,</li>
+
+<li>wiki,</li>
+
+<li>blog.</li>
+</ul>
+</li>
+</ul>
+
+<h3 id='refuge_box'>Refuge Box</h3>
+
+<ul>
+<li>
+<p>Name: TBD.</p>
+</li>
+
+<li>
+<p>Would provide a turn-key solution easily integrable in any environment:</p>
+
+<ul>
+<li>run on linux with a pre-installed Refuge starting automatically</li>
+
+<li>ARM platform</li>
+
+<li>SSD storage</li>
+
+<li>Wifi/USB/Ethernet</li>
+
+<li>Would be able to listen for wireless sensors.</li>
+
+<li>Would be able to understand I2C sensors (at some extent - to discuss).</li>
+</ul>
+</li>
+</ul>
+
+<h2 id='dates'>Dates</h2>
+
+<ul>
+<li>web site for Christmas 2012.</li>
+
+<li>touch base for January 4th 2013.</li>
+
+<li>release target date: week of January 7th 2013</li>
+</ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+            <footer>
+                <div class="wrap-footer">
+                    <div class="one-third">
+                        <article>
+                            <h2><div></div><span>Mailing</span> list</h2>
+                            <form class="mailing-list">
+                                <input type="text" />
+                                <input type="submit" value="Send" />
+                            </form>
+                            <p>Sign up to get latest news about <a href="#">Refuge Project</a> and more...</p>
+                        </article>
+                    </div>
+                    <div class="one-third">
+                        <article>
+                            <h2><div></div>More <span>info</span></h2>
+                            <ul>
+                                <li><a href="/refuge-intro.html">Refuge</a></li>
+                                <li><a href="/devices.html">Devices</a></li>
+                                <li><a href="/download.html">Download</a></li>
+                                <li><a href="/project.html">Project</a></li>
+                                <li><a href="/community.html">Community</a></li>
+                                <li><a href="/shop.html">Shop</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="one-third last">
+                        <article>
+                            <h2><div></div><span>Community</span> box</h2>
+                            <ul>
+                                <li><a href="#" class="link-twitter-account"><span></span>Twitter</a></li>
+                                <li><a href="#" class="link-gplus-account"><span></span>Google +</a></li>
+                                <li><a href="#" class="link-irc-account"><span></span>IRC</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="clear"></div>
+                    <span class="copyrights">2013 © Refuge. Designed by <a href="http://www.lolograph.com" target="_blank">lolograph</a></span>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

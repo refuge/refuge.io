@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Refuge | Data should be yours ! - meeting 02/14/2012</title>
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <a href="/" class="a-backtohome"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/details/">Refuge</a></li>
+                        <li><a href="/devices/">Devices</a>
+                            <!--<ul class="ss-menu">
+                                <li><a href="#">The Refuge Box</a></li>
+                                <li><a href="#">Refuge for Android</a></li>
+                                <li><a href="#">Refuge for iOS</a></li>
+                            </ul>-->
+                        </li>
+                        <li><a href="/download/">Download</a></li>
+                        <li><a href="/project/">Project</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/community/">Community</a></li>
+                        <li><a href="/shop/">Shop</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <section class="post">
+        <article>
+            <div class="whole">
+                <div class="wrap">
+                    <h1>meeting 02/14/2012</h1>
+                    <time class="date" datetime="2012-02-14T00:00:00+01:00">14 February 2012</time>
+                </div>
+                <div class="content">
+                    <p>Hi all,</p>
+
+<p>We had a greet meeting yesterday night (or afternoon for others). I&#8217;m trying to summarize it here. - benoît</p>
+
+<h1 id='topics'>Topics:</h1>
+
+<ul>
+<li>WIP</li>
+
+<li>Discussion about the design of refuge product. Do we provides our own API or just hack around CouchDB handlers?</li>
+
+<li>Couchjs: do we keep couchjs or go for Emonk.</li>
+
+<li>State of geocouch &amp; what need to be done</li>
+
+<li>CSV support</li>
+
+<li>Windows release</li>
+
+<li>GSOC and Creation of an organization</li>
+
+<li>Release deadline</li>
+</ul>
+
+<h1 id='summary'>Summary</h1>
+
+<h2 id='wip'>WIP</h2>
+
+<p>This week will be pushed the node management and the client blancket. We are also in sync with the couchdb project modulo the work of tilgovi on couchjs (multi file support &amp; tracebacks)</p>
+
+<h2 id='design_of_refuge'>Design of refuge</h2>
+
+<p>Refuge aims to be a decentralized dataplatform working on any device where you can create dataset, mix/merge them, edit them, render them, replicate and exchange them &#8230;.</p>
+
+<p>Data nodes in Refuge are fully decentralized and will exist inside small worlds. You are abble to query any node remotely and merge the results locally and more.</p>
+
+<p>We are playing with the concept since a long time and it became clear we couldn&#8217;t achieve our goals by just hacking the couchdb API:</p>
+
+<ul>
+<li>It takes time to have it upstream and we lost some time to do it.</li>
+
+<li>The current security implementation isn&#8217;t enough for our needs</li>
+
+<li>We need an API that handle all the decentralization layer</li>
+
+<li>It&#8217;s easier to work on our own API while keeping the compatibility with couchdb on database level</li>
+</ul>
+
+<p>It has been confirmed that we are building our own HTTP API and embedding couchdb inside Refuge. This API allows us to manage our own security level and manage versionning. For now the DB api will be compatible with couchdb. The replication too. Details of the API will be implemented and discussed on the ML this week.</p>
+
+<h2 id='couchjs'>Couchjs</h2>
+
+<p>It has been decided to replace couchjs by a new view server based on emonk. Advantages are the following:</p>
+
+<ul>
+<li>It will work on mobiles. Due to the limitations on mobiles and in particurlaly IOS and Android mobiles you can&#8217;t use couchjs.</li>
+
+<li>Using emonk everywhere will simplify the code</li>
+
+<li>With emonk we don&#8217;t need to launch multiple OS processes which can been slow. It also remove 1 step in serialization/deserialization.</li>
+</ul>
+
+<h2 id='geocouch'>Geocouch</h2>
+
+<p>Geocouch has been fully refactored to support the new couch_index API by Capnemo. Capnemo told us that he will fully document the geocouch for the release. Last patches from couchbase will be ported. In the process geocouch will be renamed refuge_spatial. This rename is needed since it become clear that the work we have done won&#8217;t be included upstream and we don&#8217;t want to wait for it. From now we will start to add to it more features like the KNN queries and more.</p>
+
+<h2 id='csv'>CSV</h2>
+
+<p>Capnemo wrote ecsv sometimes ago which is abble to parse a CSV in a streaming fashion and send the results in a database. This work will be pushed in refuge and a new DB handler wil appear allowying anyone to upload a CSV to a database, parse it and eventually transform it while it&#8217;s come using a function. eg. :</p>
+
+<pre><code>PUT /path/to/dbname/_csv?transform=ddoc/funcname&amp;delimirter=, </code></pre>
+
+<p>where a function will take a row and return a new one or nothing. The result is stored as a doc.</p>
+
+<h2 id='windows_release'>Windows release</h2>
+
+<p>fairwind is working on it and is doing an awesome work on that. After studying the work of dch (which was really helpful), he decided to adapt it to use it with rebar. At the end the refuge build will be based on rebar and some custom plugins. See the previous mail he has done about it.</p>
+
+<h2 id='gsoc_and_creation_of_an_organization'>GSOC and Creation of an organization</h2>
+
+<p>Fernando Gomez on the ml was thinking we could apply to GSOC. But it seems we need to create an organization first. This need to be checked. If we need to create an organization, it will require some work to determine which form to choose and then create it. Until someone can do the work it seem difficult to make it before the deadline of 03/09 . But why not. If someone can help on that he&#8217;s welcome.</p>
+
+<h2 id='release'>Release</h2>
+
+<ul>
+<li>An initial release will be done next week.</li>
+</ul>
+                </div>
+            </div>
+        </article>
+    </section>
+
+            <footer>
+                <div class="wrap-footer">
+                    <div class="one-third">
+                        <article>
+                            <h2><div></div><span>Mailing</span> list</h2>
+                            <form class="mailing-list">
+                                <input type="text" />
+                                <input type="submit" value="Send" />
+                            </form>
+                            <p>Sign up to get latest news about <a href="#">Refuge Project</a> and more...</p>
+                        </article>
+                    </div>
+                    <div class="one-third">
+                        <article>
+                            <h2><div></div>More <span>info</span></h2>
+                            <ul>
+                                <li><a href="/refuge-intro.html">Refuge</a></li>
+                                <li><a href="/devices.html">Devices</a></li>
+                                <li><a href="/download.html">Download</a></li>
+                                <li><a href="/project.html">Project</a></li>
+                                <li><a href="/community.html">Community</a></li>
+                                <li><a href="/shop.html">Shop</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="one-third last">
+                        <article>
+                            <h2><div></div><span>Community</span> box</h2>
+                            <ul>
+                                <li><a href="#" class="link-twitter-account"><span></span>Twitter</a></li>
+                                <li><a href="#" class="link-gplus-account"><span></span>Google +</a></li>
+                                <li><a href="#" class="link-irc-account"><span></span>IRC</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="clear"></div>
+                    <span class="copyrights">2013 © Refuge. Designed by <a href="http://www.lolograph.com" target="_blank">lolograph</a></span>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

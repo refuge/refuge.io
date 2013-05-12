@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Refuge | Data should be yours ! - CSV and refuge</title>
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="user-scalable=no; width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <a href="/" class="a-backtohome"></a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/details/">Refuge</a></li>
+                        <li><a href="/devices/">Devices</a>
+                            <!--<ul class="ss-menu">
+                                <li><a href="#">The Refuge Box</a></li>
+                                <li><a href="#">Refuge for Android</a></li>
+                                <li><a href="#">Refuge for iOS</a></li>
+                            </ul>-->
+                        </li>
+                        <li><a href="/download/">Download</a></li>
+                        <li><a href="/project/">Project</a></li>
+                        <li><a href="/news">News</a></li>
+                        <li><a href="/community/">Community</a></li>
+                        <li><a href="/shop/">Shop</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <section class="post">
+        <article>
+            <div class="whole">
+                <div class="wrap">
+                    <h1>CSV and refuge</h1>
+                    <time class="date" datetime="2011-12-05T00:00:00+01:00">05 December 2011</time>
+                </div>
+                <div class="content">
+                    <p>Hello all,</p>
+
+<p>One of the Refuge goals is to help you process/publish your datasets. For that reason, Ecsv was created to help you with CSV files.</p>
+
+<p><a href='https://github.com/refuge/ecsv'>Ecsv</a> is a simple parser that will send the parsed lines to an erlang function.</p>
+
+<p>Example: how to count the lines, just defines the following function:</p>
+
+<pre><code>MyFun = fun(_NewLine, Counter) -&gt;
+    % NewLine contains an array of strings
+    Counter + 1.</code></pre>
+
+<p>Then call ecsv with the default state set to <code>0</code>:</p>
+
+<pre><code>{ok, IoDevice} = file:open(&quot;/path/to/my.csv&quot;, [read]),
+{ok, FinalCounter} = ecsv:process_csv_file_with(IoDevice, MyFun, 0)</code></pre>
+
+<p><code>FinalCounter</code> will have the number of parsed lines.</p>
+
+<p>Take a look at the <a href='https://github.com/refuge/ecsv/blob/master/README.md'>README.md</a> file for more details.</p>
+<hr />
+<p>The next step will provide a streamlined way to import your csv files without having to specify anything else.</p>
+
+<p>Stay tuned!</p>
+
+<p>~Nicolas (capnemo)</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+            <footer>
+                <div class="wrap-footer">
+                    <div class="one-third">
+                        <article>
+                            <h2><div></div><span>Mailing</span> list</h2>
+                            <form class="mailing-list">
+                                <input type="text" />
+                                <input type="submit" value="Send" />
+                            </form>
+                            <p>Sign up to get latest news about <a href="#">Refuge Project</a> and more...</p>
+                        </article>
+                    </div>
+                    <div class="one-third">
+                        <article>
+                            <h2><div></div>More <span>info</span></h2>
+                            <ul>
+                                <li><a href="/refuge-intro.html">Refuge</a></li>
+                                <li><a href="/devices.html">Devices</a></li>
+                                <li><a href="/download.html">Download</a></li>
+                                <li><a href="/project.html">Project</a></li>
+                                <li><a href="/community.html">Community</a></li>
+                                <li><a href="/shop.html">Shop</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="one-third last">
+                        <article>
+                            <h2><div></div><span>Community</span> box</h2>
+                            <ul>
+                                <li><a href="#" class="link-twitter-account"><span></span>Twitter</a></li>
+                                <li><a href="#" class="link-gplus-account"><span></span>Google +</a></li>
+                                <li><a href="#" class="link-irc-account"><span></span>IRC</a></li>
+                            </ul>
+                        </article>
+                    </div>
+                    <div class="clear"></div>
+                    <span class="copyrights">2013 © Refuge. Designed by <a href="http://www.lolograph.com" target="_blank">lolograph</a></span>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>
