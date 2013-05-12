@@ -35,7 +35,7 @@ input[type="text"], input[type="password"], textarea, input[type="submit"], inpu
 textarea {resize:none;}
 input[type="text"]:focus, input[type="password"]:focus, textarea:focus {outline:0 none;}
 input[type="text"], input[type="submit"], input[type="button"], textarea {appearance:none;-moz-appearance:none;-webkit-appearance:none;}
-
+section:after {content:'';display:block;clear:both;}
 
 /* --------------------------------- COMMONS ----------------------------------- */
 
@@ -95,8 +95,8 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article ul li:before {content:'°';display:block;position:absolute;top:-2px;left:0;color:#ff5728;font-size:180%;font-weight:400;}
 .page article .a-btn-big, .page article .a-btn-small {margin:0 10px;}
 .page article .a-btn-big:hover, .page article .a-btn-small:hover {text-decoration:none;}
-.page article q {font-size:130%;font-style:italic;background-color:#FDFBEF;padding:20px;margin:20px;display:block;border:2px dashed #ECE6BE;}
-.page article p.highlight {font-size:130%;color:#FFCFB5;background-color:#ff5728;display:block;margin:20px;padding:20px;}
+.page article q {font-size:120%;font-style:italic;background-color:#FDFBEF;padding:20px;margin:20px;display:block;border:2px dashed #ECE6BE;}
+.page article p.highlight {font-size:120%;color:#FFCFB5;background-color:#ff5728;display:block;margin:20px;padding:20px;}
 .page article p.highlight strong {font-style:italic;display:inline-block;padding:0 5px;background-color:#FFCFB5;color:#ff5728;}
 .page article p.highlight a {color:#fff;}
 
@@ -171,6 +171,9 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .bestpoints article ul.list-items li a h3 {font-weight:700;}
 .bestpoints article ul.list-items li a span.date {display:block;margin-bottom:10px;color:#56465a;font-weight:700;font-style:italic;font-size:90%;}
 .bestpoints article ul.list-items li a p {color:#ACA69F;font-weight:400;margin-bottom:0;}
+
+/* sidebar */
+.sidebar {padding:30px;}
 
 /* latest twitter */
 .latest-tweets {background:#ff5728;}
