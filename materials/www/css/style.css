@@ -108,6 +108,15 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .article-overview .article-infos span:first-child {padding-right:20px;margin-right:20px;border-right:1px solid #D6D5D3;}
 .article-overview a.a-btn-small {margin-left:0;}
 
+/* list-pages */
+.page article ul.list-pages {padding:0;}
+.page article ul.list-pages li {margin:5px;padding:0;}
+.page article ul.list-pages li:before {content:none;}
+ul.list-pages {clear:both;}
+ul.list-pages:after {content:'';display:block;clear:both;}
+ul.list-pages li {display:block;float:left;margin:5px;}
+ul.list-pages li a.a-btn-small {display:block;margin:0;}
+
 /* --------------------------------- ELEMENTS ---------------------------------- */
 
 /* container */
