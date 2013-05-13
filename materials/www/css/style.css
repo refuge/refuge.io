@@ -102,10 +102,13 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article p.highlight a {color:#fff;}
 
 /* posts */
+.article-infos {margin-bottom:40px;}
+.article-infos span {display:inline-block;font-style:italic;font-size:90%;}
+.article-infos span:first-child {padding-right:20px;margin-right:20px;border-right:1px solid #D6D5D3;}
 .article-overview {margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid #D6D5D3;}
-.article-overview .article-infos {margin-bottom:40px;}
-.article-overview .article-infos span {display:inline-block;font-style:italic;font-size:90%;}
-.article-overview .article-infos span:first-child {padding-right:20px;margin-right:20px;border-right:1px solid #D6D5D3;}
+.article-overview h3 a {color:#56465a;font-weight:400;}
+.article-overview h3 a:hover {text-decoration:none;color:#ff5727;}
+
 .article-overview a.a-btn-small {margin-left:0;}
 
 /* list-pages */
