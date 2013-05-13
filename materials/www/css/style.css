@@ -6,7 +6,7 @@ body {
   	color:rgb(151, 144, 135);
   	font-size:0.9em;
 	font-weight:normal;
-	background:url('../img/bg-body.png') repeat center 2px;min-width:980px}
+	background:url('../img/bg-body.png') repeat center 2px;min-width:980px;}
 
 /* ---------------- COMMON ---------------- */
 ::-moz-selection { /* Pour firefox */
@@ -79,7 +79,7 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article hr:after {content:'';display:block;border-bottom:1px solid #D6D5D3;}
 .page article hr.invisible {padding:40px 0 0 0;}
 .page article hr.invisible:after {content:'';display:block;border-bottom:none;}
-.page article h2 {font-size:350%;color:#56465a;font-weight:900;letter-spacing:-0.05em;margin-bottom:40px;}
+.page article h2 {font-size:350%;color:#56465a;font-weight:900;letter-spacing:-0.05em;margin-bottom:40px;line-height:100%;}
 .page article h2 span {color:#fff;display:inline-block;padding:0 10px;background-color:#ff5727;font-style:italic;}
 .page article h3 {color:#56465a;font-weight:400;font-size:160%;position:relative;padding:10px 0 20px 0;margin-bottom:30px;}
 .page article h3 span {font-style:italic;font-weight:900;}
@@ -144,7 +144,7 @@ ul.list-pages li a.a-btn-small {display:block;margin:0;}
 
 /* splash */
 .splash  {height:400px;width:980px;margin:0 auto;position:relative;}
-.splash nav {}
+.splash nav {display:none;}
 .splash nav a {z-index:100;display:block;position:absolute;top:50%;margin-top:-25px;height:50px;width:50px;}
 .splash nav a div {height:50px;width:50px;background:url('../img/a-nav-splash.png') no-repeat 0 0;position:absolute;left:0;top:0;opacity:1;
 	transition: opacity 0.3s;
@@ -206,7 +206,7 @@ ul.list-pages li a.a-btn-small {display:block;margin:0;}
 .latest-tweets .wrap p {color:rgb(255, 193, 176);font-size:120%;border-left:1px solid rgb(255, 193, 176);padding:5px 0 5px 20px;min-height:30px;line-height:30px;}
 .latest-tweets .wrap p a {color:#fff}
 .latest-tweets .wrap p a:hover {text-decoration:underline;}
-.latest-tweets .wrap span.date {position:absolute;top:31px;left:40px;;color:#fff;display:block;width:100px;padding:0 20px;text-align:center;}
+.latest-tweets .wrap span.date {position:absolute;top:31px;left:40px;color:#fff;display:block;width:100px;padding:0 20px;text-align:center;}
 
 /* footer */
 footer {background:rgb(253, 251, 239);}
@@ -239,7 +239,52 @@ span.copyrights {display:block;text-align:center;font-size:70%;border-top:1px so
 @media only screen
 and (min-width : 320px)
 and (max-width : 768px) {
-
+    body {width:100%;min-width:auto;}
+    
+    /* columns */
+    .columns:after {content:'';display:block;clear:both;}
+    .one-half, .one-third, .two-third, .one-fourth, .three-fourth {width:100%;float:none;clear:both;}
+    
+    /* nav */
+    .inline-secondary-nav ul li {margin:0 5px 7px 0;}
+    .secondary-nav ul li {margin-bottom:10px;}
+    
+    /* page */
+    .page {width:100%;}
+    .page article {padding:20px;}
+    .page article h2 {font-size:250%;margin-bottom:30px;}
+    .page article ul {padding:20px;}
+    .page article ul li {padding:0 0 0 20px;}
+    
+    /* posts */
+    .article-infos span {display:block;font-style:italic;font-size:90%;border-bottom:1px dashed #D6D5D3;padding-bottom:10px;}
+    .article-infos span:first-child {padding-right:0;margin-right:0;border-right:none;margin-bottom:10px;}
+    
+    /* splash */
+    .splash  {height:auto;width:100%;}
+    .splash nav {display:none;}
+    .splash .wrap-slides {height:auto;width:100%;position:relative;top:auto;left:auto;}
+    .splash .wrap-slides article {height:auto;position:relative;left:auto;top:auto;}
+    .splash .wrap-slides article .wrap {float:right;position:relative;top:auto;left:auto;width:auto;padding:20px;}
+    .splash .wrap-slides article .wrap h2 {font-size:250%;margin-bottom:20px;}
+    .splash .wrap-slides article .wrap p {font-size:140%;}
+    .splash .wrap-slides article img {float:left;position:relative;top:auto;right:auto;width:60%;height:auto;margin:20px 20% 40px 20%;}
+    
+    /* bestpoints */
+    .bestpoints {padding:20px 5px;width:100%;-moz-box-sizing : border-box;-webkit-box-sizing : border-box;box-sizing : border-box;}
+    .bestpoints article {margin:5px;padding:10px;}
+    
+    /* latest twitter */
+    .latest-tweets {background:#ff5728;}
+    .latest-tweets .wrap {padding:20px;width:auto;margin:0 auto;min-height:40px;}
+    .refuge-twitter-account {position:relative;top:auto;left:auto;margin:0 auto 10px auto;}
+    .latest-tweets .wrap p {border-left:none;padding:10px 0px;min-height:30px;line-height:100%;text-align:center;}
+    .latest-tweets .wrap span.date {position:relative;top:auto;left:auto;display:block;width:auto;padding:10px 0 0 0;margin:10px 0 0 0;text-align:center;}
+    .latest-tweets .wrap span.date:before {content:'';display:block;width:40px;height:0;border-bottom:1px solid rgb(255, 193, 176);position:absolute;top:0;left:50%;margin-left:-20px;}
+    
+    /* footer */
+    footer .wrap-footer {width:100%;}
+    footer .wrap-footer article {padding:10px;}
 }
 
 /* iPads (portrait and landscape) ----------- */
