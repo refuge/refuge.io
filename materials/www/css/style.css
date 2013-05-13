@@ -68,7 +68,7 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 /* page */
 .page {width:980px;margin:0 auto;padding:30px 0;}
 .page .inline-secondary-nav ul {padding:0 40px;}
-.page article {background:rgba(255, 255, 255, 1);padding:40px 30px;}
+.page article {background:rgba(255, 255, 255, 1);padding:30px;}
 .page article .whole {padding:10px;-moz-box-sizing : border-box;-webkit-box-sizing : border-box;box-sizing : border-box;}
 .page article .one-half {padding:10px;-moz-box-sizing : border-box;-webkit-box-sizing : border-box;box-sizing : border-box;}
 .page article .one-third {padding:10px;-moz-box-sizing : border-box;-webkit-box-sizing : border-box;box-sizing : border-box;}
@@ -110,11 +110,11 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 
 /* list-pages */
 .page article ul.list-pages {padding:0;}
-.page article ul.list-pages li {margin:5px;padding:0;}
+.page article ul.list-pages li {margin:10px 10px 0 0;padding:0;}
 .page article ul.list-pages li:before {content:none;}
 ul.list-pages {clear:both;}
 ul.list-pages:after {content:'';display:block;clear:both;}
-ul.list-pages li {display:block;float:left;margin:5px;}
+ul.list-pages li {display:block;float:left;margin:10px 10px 0 0;}
 ul.list-pages li a.a-btn-small {display:block;margin:0;}
 
 /* --------------------------------- ELEMENTS ---------------------------------- */
