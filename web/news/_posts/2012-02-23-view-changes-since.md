@@ -1,6 +1,9 @@
 ---
 layout: post
 title: View changes since...
+author: benoitc
+tags: indexer couchdb
+summary: How to get changes in a view since a given point.
 ---
 
 Quite happy,

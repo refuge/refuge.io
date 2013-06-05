@@ -1,6 +1,9 @@
 ---
 layout: post
 title: New preview of rcouchx
+author: benoitc
+tags: rcouch osx
+summary: Update of the latest version of rcouchx.
 ---
 
 rcouchx is a macosx interface for rcouch. Initial version was
@@ -9,7 +12,6 @@ segfaulting on some osx systems becausee it didn't find the uri file.
 I've updated the code to fix this issue and while I was there I also
 updated the rcouch source to generate a full DMG and distribute the
 rcouchx application;
-
 
 ![rcouchx DMG screenshot](/img/new-preview-of-rcouchx/screenshot.png)
 

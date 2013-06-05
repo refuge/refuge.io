@@ -1,6 +1,9 @@
 ---
 layout: post
 title: GeoCouch and Refuge
+author: nrdufour
+tags: geocouch couchdb
+summary: Geocouch being integrated in Refuge as refuge_spatial with the addition of knn queries.
 ---
 
 Hello,

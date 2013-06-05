@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Say hello to rcouchx!
+author: benoitc
+tags: rcouch osx
+summary: rcouchx, a new macosx interface for rcouch.
 ---
 
 rcouchx is a macosx interface for rcouch. It's adapted couchdbx-app from

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: CSV and refuge
+author: nrdufour
+tags: csv tools
+summary: A new tool to import csv file into rcouch.
 ---
 
 Hello all,
