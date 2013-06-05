@@ -6,18 +6,22 @@ title: News
                     <div class="columns">
                         <div class="two-third">
                             <article>
-                            <h2>Latest <span>news</span></h2>
-                            {% for post in site.posts %}
-                                <div class="article-overview">
-                                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                                    <div class="article-infos">
-                                        <span>Published on {{ post.date | date_to_long_string }} by {{ post.author }}</span>
-                                        <span>{{ post.tags | array_to_sentence_string }}</span>
+                                <div class="columns">
+                                    <div class="whole">
+                                        <h2>Latest <span>news</span></h2>
+                                        {% for post in site.posts %}
+                                            <div class="article-overview">
+                                                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                                                <div class="article-infos">
+                                                    <span>Published on {{ post.date | date_to_long_string }} by {{ post.author }}</span>
+                                                    <span>{{ post.tags | array_to_sentence_string }}</span>
+                                                </div>
+                                                <p>{{ post.summary }}</p>
+                                                <a href="{{ post.url }}" class="a-btn-small">For more...</a>
+                                            </div>
+                                        {% endfor %}
                                     </div>
-                                    <p>{{ post.summary }}</p>
-                                    <a href="{{ post.url }}" class="a-btn-small">For more...</a>
                                 </div>
-                            {% endfor %}
                             </article>
                         </div>
                         <div class="one-third">
