@@ -1,0 +1,13 @@
+---
+layout: default
+---
+            <section class="page">
+                <nav class="inline-secondary-nav">
+                    <ul>
+                        <li><a href="/details/index.html" class="a-btn-small{% if page.section == 'intro' %} selected{% endif %}">Intro</a></li>
+                        <li><a href="/details/features.html" class="a-btn-small{% if page.section == 'features' %} selected{% endif %}">Features</a></li>
+                        <li><a href="/details/modules.html" class="a-btn-small{% if page.section == 'modules' %} selected{% endif %}">Modules</a></li>
+                    </ul>
+                </nav>
+                {{ content }}
+            </section>
