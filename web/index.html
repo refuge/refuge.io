@@ -48,7 +48,7 @@ title: Welcome
                         <a href="{{ post.url }}">
                             <h3>{{ post.title }}</h3>
                             <span class="date">{{ post.date | date_to_string }}</span>
-                            <p>{{ post.excerpt }}</p>
+                            {{ post.excerpt }}
                         </a>
                         </li>
                         {% endfor %}
@@ -76,7 +76,6 @@ title: Welcome
                     </div>
                     </article>
                 </div>
-                <div class="clear"></div>
             </section>
             
             <section class="latest-tweets">
