@@ -100,6 +100,8 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article p.highlight {font-size:120%;color:#FFCFB5;background-color:#ff5728;display:block;margin:20px 0;padding:20px;}
 .page article p.highlight strong {font-style:italic;display:inline-block;padding:0 5px;background-color:#FFCFB5;color:#ff5728;}
 .page article p.highlight a {color:#fff;}
+.page article pre {max-height: 340px; overflow-y: scroll; display: block; padding: 9.5px;margin: 0 0 10px; font-size: 13px; line-size: 20px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid rgba(0,0,0,0.15); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; white-space: pre-wrap;}
+.page article pre code {font-family: Monaco,Menlo,Consolas,"Courier New",monospace;}
 
 /* posts */
 .article-infos {margin-bottom:40px;}
