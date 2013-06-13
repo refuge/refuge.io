@@ -4,18 +4,9 @@
                     <ul>
                         <li{% if page.title == "Welcome" %} class="selected"{% endif %}><a href="/">Home</a></li>
                         <li{% if page.title == "Details" %} class="selected"{% endif %}><a href="/details">Refuge</a></li>
-                        <li{% if page.title == "Devices" %} class="selected"{% endif %}><a href="/devices">Devices</a>
-                        <!--<ul class="ss-menu">
-                            <li><a href="#">The Refuge Box</a></li>
-                            <li><a href="#">Refuge for Android</a></li>
-                            <li><a href="#">Refuge for iOS</a></li>
-                        </ul>-->
-                        </li>
                         <li{% if page.title == "Download" %} class="selected"{% endif %}><a href="/download">Download</a></li>
-                        <li{% if page.title == "Project" %} class="selected"{% endif %}><a href="/project">Project</a></li>
                         <li{% if page.title == "News" or page.categories | first == 'news' %} class="selected"{% endif %}><a href="/news">News</a></li>
                         <li{% if page.title == "Community" %} class="selected"{% endif %}><a href="/community">Community</a></li>
-                        <li{% if page.title == "Shop" %} class="selected"{% endif %}><a href="/shop">Shop</a></li>
                     </ul>
                 </nav>
             </header>
