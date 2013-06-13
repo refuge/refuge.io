@@ -11,7 +11,7 @@ section: modules
                                 <h2>Modules</h2>
                                 <div id="sub-nav">
                                     <div id="coffer-btn" class="section-btn a-btn-big selected">Coffer</div>
-                                    <div id="ishtar-btn" class="section-btn a-btn-big">Ishtar</div>
+                                    <div id="more-btn" class="section-btn a-btn-big">More to come</div>
                                 </div>
                             </div>
                         </div>
@@ -19,24 +19,23 @@ section: modules
                             <div class="whole">
                                 <h3>Coffer</h3>
                                 <p>Coffer is a very versatile blob storage engine.</p>
-                                <p>Github stats here</p>
+                                <div class="github-widget" data-repo="refuge/coffer"></div>
                                 <h4>Description</h4>
-                                <p>TBD here</p>
+                                <p>It allows you to store blobs (set of bytes) of any kind referenced by a unique id of your choice (typically a content hash like a SHA1 or a MD5).</p>
                             </div>
                         </div>
-                        <div id="ishtar" class="columns section-nav" style="display: none">
+                        <div id="more" class="columns section-nav" style="display: none">
                             <div class="whole">
-                                <h3>Ishtar</h3>
-                                <p>TBD here</p>
-                                <p>Github stats here</p>
-                                <h4>Description</h4>
-                                <p>TBD here</p>
+                                <h3>More to come</h3>
+                                <p>We are currently developping more parts of Refuge.</p>
+                                <p>Stay tuned!</p>
                             </div>
                         </div>
                     </article>
                 </div>
 
                 <script src="/js/jquery-1.10.1.min.js"></script>
+                <script src="/js/jquery.githubRepoWidget.min.js"></script>
                 <script type="text/javascript">
                     $('#coffer-btn').click(function() {
                             $('.section-nav').hide();
@@ -44,10 +43,10 @@ section: modules
                             $('.section-btn').removeClass('selected');
                             $('#coffer-btn').addClass('selected');
                             });
-                    $('#ishtar-btn').click(function() {
+                    $('#more-btn').click(function() {
                             $('.section-nav').hide();
-                            $('#ishtar').show();
+                            $('#more').show();
                             $('.section-btn').removeClass('selected');
-                            $('#ishtar-btn').addClass('selected');
+                            $('#more-btn').addClass('selected');
                             });
                 </script>
