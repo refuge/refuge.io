@@ -9,11 +9,75 @@ section: features
                         <div class="columns">
                             <div class="whole">
                                 <h2>Features</h2>
-                                <div class="a-btn-big">Blob<br/>Server</div>
-                                <div class="a-btn-big">Oriented<br/>Document</div>
-                                <div class="a-btn-big">Message<br/>processing</div>
-                                <div class="a-btn-big">Decentralized<br/>&nbsp;</div>
+                                <div id="blob-server-btn" class="a-btn-big section-btn selected">Blob<br/>Server</div>
+                                <div id="oriented-document-btn" class="a-btn-big section-btn">Oriented<br/>Document</div>
+                                <div id="message-processing-btn" class="a-btn-big section-btn">Message<br/>processing</div>
+                                <div id="decentralized-btn" class="a-btn-big section-btn">Decentralized<br/>&nbsp;</div>
+                            </div>
+                        </div>
+                        <div id="blob-server" class="columns section-nav" style="display: inline">
+                            <div class="whole">
+                                <h3>Blob Server</h3>
+                                <p>TBD here</p>
+                                <p>Github stats here</p>
+                                <h4>Description</h4>
+                                <p>TBD here</p>
+                            </div>
+                        </div>
+                        <div id="oriented-document" class="columns section-nav" style="display: none">
+                            <div class="whole">
+                                <h3>Oriented Document</h3>
+                                <p>TBD here</p>
+                                <p>Github stats here</p>
+                                <h4>Description</h4>
+                                <p>TBD here</p>
+                            </div>
+                        </div>
+                        <div id="message-processing" class="columns section-nav" style="display: none">
+                            <div class="whole">
+                                <h3>Message Processing</h3>
+                                <p>TBD here</p>
+                                <p>Github stats here</p>
+                                <h4>Description</h4>
+                                <p>TBD here</p>
+                            </div>
+                        </div>
+                        <div id="decentralized" class="columns section-nav" style="display: none">
+                            <div class="whole">
+                                <h3>Decentralized</h3>
+                                <p>TBD here</p>
+                                <p>Github stats here</p>
+                                <h4>Description</h4>
+                                <p>TBD here</p>
                             </div>
                         </div>
                     </article>
                 </div>
+
+                <script src="/js/jquery-1.10.1.min.js"></script>
+                <script type="text/javascript">
+                    $('#blob-server-btn').click(function() {
+                            $('.section-nav').hide();
+                            $('#blob-server').show();
+                            $('.section-btn').removeClass('selected');
+                            $('#blob-server-btn').addClass('selected');
+                            });
+                    $('#oriented-document-btn').click(function() {
+                            $('.section-nav').hide();
+                            $('#oriented-document').show();
+                            $('.section-btn').removeClass('selected');
+                            $('#oriented-document-btn').addClass('selected');
+                            });
+                    $('#message-processing-btn').click(function() {
+                            $('.section-nav').hide();
+                            $('#message-processing').show();
+                            $('.section-btn').removeClass('selected');
+                            $('#message-processing-btn').addClass('selected');
+                            });
+                    $('#decentralized-btn').click(function() {
+                            $('.section-nav').hide();
+                            $('#decentralized').show();
+                            $('.section-btn').removeClass('selected');
+                            $('#decentralized-btn').addClass('selected');
+                            });
+                </script>
