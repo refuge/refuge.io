@@ -11,24 +11,84 @@ section: modules
                                 <h2>Modules</h2>
                                 <div id="sub-nav">
                                     <div id="coffer-btn" class="section-btn a-btn-big selected">Coffer</div>
-                                    <div id="more-btn" class="section-btn a-btn-big">More to come</div>
+                                    <div id="coffercli-btn" class="section-btn a-btn-big">Coffer Client</div>
+                                    <div id="rcouch-btn" class="section-btn a-btn-big">RCouch</div>
                                 </div>
                             </div>
                         </div>
                         <div id="coffer" class="columns section-nav" style="display: inline">
                             <div class="whole">
                                 <h3>Coffer</h3>
-                                <p>Coffer is a very versatile blob storage engine.</p>
-                                <div class="github-widget" data-repo="refuge/coffer"></div>
+                            </div>
+                            <div class="one-half">
                                 <h4>Description</h4>
-                                <p>It allows you to store blobs (set of bytes) of any kind referenced by a unique id of your choice (typically a content hash like a SHA1 or a MD5).</p>
+                                <p>Coffer is a very versatile blob storage engine written in Erlang.</p>
+                                <p>It allows you to store blobs (set of bytes) in a given container.</p>
+                                <img src="/img/coffer_overview.png" alt="Coffer Overview" />
+                            </div>
+                            <div class="one-half">
+                                <h4>Main features</h4>
+                                    <ul>
+                                        <li>Multi-backend (FS, Distributed FS, S3...)</li>
+                                        <li>Simple REST API: GET,PUT, POST, DELETE</li>
+                                        <li>Synchronisation between containers</li>
+                                        <li>All blobs are uniquely identitified (content-hash)</li>
+                                        <li>Works with mobile & embedded devices</li>
+                                        <li>Partials upload & downloads supported</li>
+                                        <li>RESTFUL, resources visible on HTTP</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="whole">
+                                <h4>Source</h4>
+                                <div class="github-widget" data-repo="refuge/coffer"></div>
                             </div>
                         </div>
-                        <div id="more" class="columns section-nav" style="display: none">
+                        <div id="coffercli" class="columns section-nav" style="display: none">
                             <div class="whole">
-                                <h3>More to come</h3>
-                                <p>We are currently developping more parts of Refuge.</p>
-                                <p>Stay tuned!</p>
+                                <h3>Coffer Client</h3>
+                            </div>
+                            <div class="one-half">
+                                <h4>Description</h4>
+                                <p>Coffer is a small HTTP client written in erlang, able to do most operations on Coffer such as:
+                                <ul>
+                                    <li>Listing blobs</li>
+                                    <li>adding, fetching blobs</li>
+                                    <li>asking if a given blob exists</li>
+                                    <li>and more to come</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="one-half">
+                                <h4>Source</h4>
+                                <div class="github-widget" data-repo="refuge/coffercli"></div>
+                            </div>
+                        </div>
+                        <div id="rcouch" class="columns section-nav" style="display: none">
+                            <div class="whole">
+                                <h3>RCouch</h3>
+                            </div>
+                            <div class="one-half">
+                                <h4>Description</h4>
+                                <p>RCouch is a static distribution of couchdb using rebar. It is an extraction of the refuge code to ease the distribution of couchdb.</p>
+                                <p>Based on the couchdb code it is tagged from time to time for stability purpose. At some point some supported branch may appear.</p>
+                                <p>RCouch differs from refuge by only focusing on Apache CouchDB. It won't contain any of the refuge features like P2P nodes handling, ... . Internally we are using it to test couchdb and as an example on how to embed couchdb in your own applications.</p>
+                                <p>RCouch is brought you by the Refuge project.</p>
+                            </div>
+                            <div class="one-half">
+                                <h4>Features</h4>
+                                <ul>
+                                    <li>Apache CouchDB based</li>
+                                    <li>Geocouch integrated</li>
+                                    <li>rebar</li>
+                                    <li>relocatable</li>
+                                    <li>Fully opensource. All the sources are on refuge GIT repository (<a href="http://github.com/refuge">http://github.com/refuge</a>) under Apache License 2.</li>
+                                </ul>
+                                </p>
+                            </div>
+                            <div class="whole">
+                                <h4>Source</h4>
+                                <div class="github-widget" data-repo="refuge/rcouch"></div>
                             </div>
                         </div>
                     </article>
@@ -43,10 +103,16 @@ section: modules
                             $('.section-btn').removeClass('selected');
                             $('#coffer-btn').addClass('selected');
                             });
-                    $('#more-btn').click(function() {
+                    $('#coffercli-btn').click(function() {
                             $('.section-nav').hide();
-                            $('#more').show();
+                            $('#coffercli').show();
                             $('.section-btn').removeClass('selected');
-                            $('#more-btn').addClass('selected');
+                            $('#coffercli-btn').addClass('selected');
+                            });
+                    $('#rcouch-btn').click(function() {
+                            $('.section-nav').hide();
+                            $('#rcouch').show();
+                            $('.section-btn').removeClass('selected');
+                            $('#rcouch-btn').addClass('selected');
                             });
                 </script>
