@@ -27,7 +27,8 @@ title: News
                             <h2>News by <span>tags</span></h2>
                             <nav class="secondary-nav">
                                     {% for ptag in site.tags %}
-                                    <a href="/news/by-tag/{{ ptag | first | slugize }}" class="a-btn-small" style="font-size: {{ ptag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%">{{ ptag | first }}</a>
+                                    <!--<a href="/news/by-tag/{{ ptag | first | slugize }}" class="a-btn-small" style="font-size: {{ ptag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%">{{ ptag | first }}</a>-->
+                                    <a href="#" class="a-btn-small" style="font-size: {{ ptag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%">{{ ptag | first }}</a>
                                     {% endfor %}
                             </nav>
                         </div>
