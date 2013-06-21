@@ -176,7 +176,7 @@ ul.list-pages li a.a-btn-small {display:block;margin:0;}
 .splash .wrap-slides article img {position:absolute;top:35%;right:15%;width:30%;height:auto;}
 
 /* bestpoints */
-.bestpoints {padding:20px 10px 60px 10px;width:960px;margin:0 auto;}
+.bestpoints {padding:20px 10px 20px 10px;width:960px;margin:0 auto;}
 .bestpoints:after {content:'';display:block;clear:both;}
 .bestpoints article {margin:10px;padding:20px;background:rgba(255, 255, 255, 1);border-radius:2px;}
 .bestpoints article.article-version {background:rgba(255, 255, 255, 1) url('../img/img-version.png') no-repeat right 100px;background-size:120px auto;min-height:340px;}
