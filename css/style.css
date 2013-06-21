@@ -131,6 +131,7 @@ ul.list-pages li a.a-btn-small {display:block;margin:0;}
 .header {height:70px;background-color:#362b39;padding:0px 20px;position:relative;border-top:2px solid #ff5728;}
 .header .a-backtohome {display:block;height:50px;padding:10px;width:146px;background:url('../img/a-backtohome.png') no-repeat center center;}
 .header nav {position:absolute;right:20px;top:0px;height:70px;}
+.header nav .btn-menu-resp {display:none;}
 .header nav ul li {float:left;padding:0 0px;position:relative;}
 .header nav ul li a {display:block;height:30px;line-height:30px;padding:30px 20px 10px;color:#99889e;font-size:100%;}
 .header nav ul li a:hover, .header nav ul li.selected a {color:#fff;background-color:rgba(96, 81, 100, 1);}
@@ -241,7 +242,7 @@ span.copyrights {display:block;text-align:center;font-size:70%;border-top:1px so
 @media only screen
 and (min-width : 320px)
 and (max-width : 768px) {
-    body {width:100%;min-width:auto;}
+    body {width:100%;min-width:0;}
     
     /* columns */
     .columns:after {content:'';display:block;clear:both;}
@@ -262,7 +263,7 @@ and (max-width : 768px) {
     .article-infos span {display:block;font-style:italic;font-size:90%;border-bottom:1px dashed #D6D5D3;padding-bottom:10px;}
     .article-infos span:first-child {padding-right:0;margin-right:0;border-right:none;margin-bottom:10px;}
     
-    /* header */
+    /* header 
     .header {padding:0 5px;height:52px;}
     .header .a-backtohome {display:block;height:42px;padding:0px;margin:5px;width:108px;background:url('../img/a-backtohome.png') no-repeat center center;background-size:100% auto;}
     .header nav {width:125px;z-index:1000;min-height:auto;height:auto;top:10px;right:10px;}	
@@ -270,10 +271,24 @@ and (max-width : 768px) {
     .header nav ul li {float:none;display:none;margin:0;}
     .header nav .selected {display:block;}
     .header nav ul li a {height:20px;line-height:20px;display:block;padding:5px 5px 5px 30px;text-align:left;}
-    .header nav ul li.selected a {background:none;color:#fff;}
+    .header nav ul:hover li a{}
+    .header nav ul li.selected a {background:none;color:#fff; pointer-events:none;}
     .header nav ul:hover {background-image:none;}
     .header nav ul:hover li {display:block;margin:0 0 5px;}
-    .header nav ul:hover li.selected {background:url('../img/icon-check.png') no-repeat 8px 9px;background-size:14px auto;}
+    .header nav ul:hover li.selected {background:url('../img/icon-check.png') no-repeat 8px 9px;background-size:14px auto;}*/
+
+    /* header */
+    .header {padding:0;min-height:54px;height:auto;}
+    .header:after {content:'';display:block;clear:both;}
+    .header .a-backtohome {z-index:2000;display:block;height:42px;padding:0px;margin:0px;position:absolute;top:5px;left:5px;width:108px;background:url('../img/a-backtohome.png') no-repeat center center;background-size:100% auto;}
+    .header nav {width:auto;z-index:1000;height:auto;top:auto;right:auto;min-height:auto;float:right;padding:54px 0 0 0;margin:0px;position:relative;}
+    .header nav.show-nav {float:none;width:auto;height:auto;}
+    .header nav .btn-menu-resp {display:block;height:54px;width:54px;position:absolute;top:0;right:0;background:url('../img/icon-menu.png') no-repeat center center;background-size:14px auto;}
+    .header nav ul {display:none;background:#2B222E;padding:0;}
+    .header nav.show-nav ul {display:block;}
+    .header nav ul li {float:none;}
+    .header nav ul li a {padding:10px 20px;}
+
     
     /* splash */
     .splash  {height:auto;width:100%;}

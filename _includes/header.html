@@ -1,7 +1,8 @@
             <header class="header">
                 <a href="/" class="a-backtohome"></a>
-                <nav>
-                    <ul>
+                <nav id="navbar">
+                    <a href="#" class="btn-menu-resp"></a>
+                    <ul onclick="return true">
                         <li{% if page.title == "Welcome" %} class="selected"{% endif %}><a href="/">Home</a></li>
                         <li{% if page.title == "Details" or page.category == 'refuge' %} class="selected"{% endif %}><a href="/details">Refuge</a></li>
                         <li{% if page.title == "Download" %} class="selected"{% endif %}><a href="/download">Download</a></li>
