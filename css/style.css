@@ -179,7 +179,7 @@ ul.list-pages li a.a-btn-small {display:block;margin:0;}
 .bestpoints {padding:20px 10px 20px 10px;width:960px;margin:0 auto;}
 .bestpoints:after {content:'';display:block;clear:both;}
 .bestpoints article {margin:10px;padding:20px;background:rgba(255, 255, 255, 1);border-radius:2px;}
-.bestpoints article.article-version {background:rgba(255, 255, 255, 1) url('../img/img-version.png') no-repeat right 100px;background-size:120px auto;min-height:340px;}
+.bestpoints article.article-version {background:rgba(255, 255, 255, 1) url('../img/img-version.png') no-repeat right 100px;background-size:120px auto;min-height:260px;}
 .bestpoints article h2 {color:#56465a;font-weight:400;font-size:160%;position:relative;padding:10px 0 20px 0;margin-bottom:30px;}
 .bestpoints article h2 span {font-style:italic;font-weight:900;}
 .bestpoints article h2:after {content:'';position:absolute;height:2px;width:60px;bottom:0;left:0;background-color:#ff5727;}
