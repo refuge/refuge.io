@@ -1,13 +1,14 @@
+            {% capture section_name %}{{ page.path | split:'/' | first }}{% endcapture %}
             <header class="header">
                 <a href="/" class="a-backtohome"></a>
                 <nav id="navbar">
                     <div class="btn-menu-resp"></div>
                     <ul onclick="return true">
                         <li{% if page.title == "Welcome" %} class="selected"{% endif %}><a href="/">Home</a></li>
-                        <li{% if page.title == "Details" or page.category == 'refuge' %} class="selected"{% endif %}><a href="/details">Refuge</a></li>
-                        <li{% if page.title == "Download" %} class="selected"{% endif %}><a href="/download">Download</a></li>
-                        <li{% if page.title == "News" or page.categories | first == 'news' %} class="selected"{% endif %}><a href="/news">News</a></li>
-                        <li{% if page.title == "Community" %} class="selected"{% endif %}><a href="/community">Community</a></li>
+                        <li{% if section_name == 'details' %} class="selected"{% endif %}><a href="/details">Refuge</a></li>
+                        <li{% if section_name == 'news' %} class="selected"{% endif %}><a href="/news">News</a></li>
+                        <li{% if section_name == 'download' %} class="selected"{% endif %}><a href="/download">Download</a></li>
+                        <li{% if section_name == 'community' %} class="selected"{% endif %}><a href="/community">Community</a></li>
                     </ul>
                 </nav>
             </header>
