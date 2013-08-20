@@ -1,0 +1,50 @@
+---
+layout: default
+title: Journals
+categories: ["journal"]
+---
+            <link rel="stylesheet" type="text/css" href="/css/timeline.css">
+            <script src="/js/timeliner.js"></script>
+            <section class="page">
+                    <div class="whole">
+                        <article>
+                            <div class="columns">
+                                <div class="whole">
+                                    <h3><span>RTalk</span> logs</h3>
+                                    <div id="timelineContainer">
+                                    {% assign major = "" %}
+                                    {% for post in site.categories.rtalk_log %}
+                                        {% capture current_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+                                        {% if current_year != major %}
+                                        {% if major != "" %}
+                                        </div>
+                                        {% endif %}
+                                        <div class="timelineMajor">
+                                        <h3 class="timelineMajorMarker"><span>{{ current_year }}</span></h3>
+                                        {% endif %}
+
+                                        {% capture id %}{{ post.date | date: "%Y%m%d" }}{% endcapture %}
+
+                                        <dl class="timelineMinor">
+                                            <dt id="{{id}}"><a>{{ post.date | date: "%b %d" }}</a> -- {{post.title}}</dt>
+                                            <dd class="timelineEvent" id="{{id}}EX" style="display: none; ">
+                                                {{ post.content }}
+                                            </dd>
+                                        </dl>
+
+                                        {% if current_year != major %}
+                                            {% if major != "" %}
+                                            </div>
+                                            {% endif %}
+                                        {% assign major = current_year %}
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+            </section>
+
+            <script>
+                $.timeliner();
+            </script>

@@ -1,0 +1,135 @@
+div.timelineMajor {
+    clear:left;
+    float:left;
+    margin:0 0 12px;
+    //width:900px;
+}
+
+.timelineMajor h3 {
+    cursor: pointer;
+    //font-size:3em;
+    font-weight:400;
+    margin:0 0 10px;
+    padding:4px 4px 4px 20px;
+}
+
+.timelineMajor h3 span {
+    background:#ccc;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    //color:#131313;
+    letter-spacing:.1em;
+    line-height:1.7em;
+    padding:3px 5px 1px;
+}
+
+dl.timelineMinor {
+    clear:left;
+    float:left;
+    margin:0 12px 0 0;
+    padding:4px 4px 4px 0;
+    position:relative;
+    //width:880px;
+    border-left: 1px solid black;
+}
+
+.timelineMinor dt {
+    clear:left;
+    //font-size:1.6em;
+    list-style-type:none;
+    line-height:1.2em;
+    margin:0 0 12px;
+    padding:0 0 0 24px;
+    white-space:nowrap;
+}
+
+.timelineMinor dt a {
+    //color:#999;
+    cursor:pointer;
+}
+
+.timelineMinor dt a.closed {
+    //color:#999;
+    //font-size:1em;
+    margin-left:0;
+}
+
+.timelineMinor dt a.open {
+    //color:#7DBADF;
+}
+
+.timelineMinor dt a:hover {
+    //color:#7DBADF;
+}
+
+.timelineMinor dd {
+    padding-left:24px;
+    width:100%;
+}
+
+.timelineMinor dd h3 {
+    //color:#FFF;
+    clear:both;
+    float:left;
+    //font-size:1.5em;
+    margin:0;
+    white-space:nowrap;
+}
+
+.timelineEvent p {
+    clear:left;
+    float:left;
+    line-height:1.5em;
+    margin:6px 0 10px;
+}
+.timelineEvent h4 {
+    clear:left;
+    float:left;
+    //font-size:1.4em;
+    font-weight:400;
+    margin:10px 0 0;
+    padding:0 0 0 20px;
+}
+
+.timelineEvent blockquote {
+    border-left:2px solid #ccc;
+    clear:left;
+    float:left;
+    //font-size:1.8em;
+    margin-left:0;
+    padding:0 30px;
+    //width:400px;
+}
+
+.timelineEvent blockquote .attribution{
+    //font-size:0.7em;
+    text-align: right;
+}
+
+
+.timelineEvent div.media {
+    float:right;
+    padding:0 0 12px;
+    //width:300px;
+}
+
+.timelineEvent .media img {
+    border:2px solid #000;
+    margin:0;
+}
+
+.timelineEvent .media p {
+    //font-size:1.2em;
+    margin:0;
+    padding:0;
+}
+
+.timelineEvent .media a:link,.timelineEvent .media a:visited {
+    //color:#ab221b;
+}
+
+.timelineEvent .media a:hover {
+    //color:#7DBADF;
+}
+

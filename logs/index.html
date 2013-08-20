@@ -1,0 +1,50 @@
+---
+layout: default
+title: Journals
+categories: ["journal"]
+---
+            <section class="page">
+                    <div class="whole">
+                        <article>
+                            <div class="columns">
+                                <div class="whole">
+                                    <h2>Logs</h2>
+                                    <p>Logs are all the notes we want to keep and share about a specific project or not. It's good way to never loose a link, or why an idea is a good one ;). It's also a far better way to show progress compare to blog posts. </p>
+                                </div>
+                                <div class="one-third">
+                                    <h3><span>RCouch</span></h3>
+                                    <p>
+                                    {% for post in site.categories.rcouch_log %}
+                                    Log {{ post.date | date: "%Y%m%d" }} / 
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                    <br />
+                                    {% endfor %}
+                                    </p>
+                                    <a href="/logs/rcouch_log">Full log</a>
+                                </div>
+                                <div class="one-third">
+                                    <h3><span>RTalk</span></h3>
+                                    <p>
+                                    {% for post in site.categories.rtalk_log %}
+                                    Log {{ post.date | date: "%Y%m%d" }} / 
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                    <br />
+                                    {% endfor %}
+                                    </p>
+                                    <a href="/logs/rtalk_log">Full log</a>
+                                </div>
+                                <div class="one-third">
+                                    <h3><span>Coffer</span></h3>
+                                    <p>
+                                    {% for post in site.categories.coffer_log %}
+                                    Log {{ post.date | date: "%Y%m%d" }} / 
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                    <br />
+                                    {% endfor %}
+                                    </p>
+                                    <a href="/logs/coffer_log">Full log</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+            </section>
