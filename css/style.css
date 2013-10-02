@@ -103,6 +103,23 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article pre {max-height: 340px; overflow-y: scroll; display: block; padding: 9.5px;margin: 0 0 10px; font-size: 13px; line-size: 20px; word-break: break-all; word-wrap: break-word; background-color: #f5f5f5; border: 1px solid rgba(0,0,0,0.15); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; white-space: pre-wrap;}
 .page article pre code {font-family: Monaco,Menlo,Consolas,"Courier New",monospace;}
 
+code {
+    padding: 2px 4px;
+    color: #d14;
+    white-space: nowrap;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+pre code {
+    padding: 0;
+    color: inherit;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: transparent;
+    border: 0;
+}
+
 /* posts */
 .article-infos {margin-bottom:40px;}
 .article-infos span {display:inline-block;font-style:italic;font-size:90%;}
