@@ -2,7 +2,8 @@
 layout: post
 title: A few steps with Coffer
 author: nrdufour
-tags: coffer, tutorial
+tags: "coffer, tutorial"
+published: true
 ---
 
 Here is the first of a serie of posts trying to explain what we are trying to do and also how to use it.
@@ -13,7 +14,7 @@ The main idea is foster discussions around it and also archive our process if po
 
 ### Coffer?
 
-Coffer is a simple engine (written in erlang) allowing you to store **blobs** (set of bytes) that are uniquely identified and managed by a given storage.
+Coffer is a simple engine (written in erlang) allowing you to store **blobs** (set of bytes) that are uniquely identified (content hash) and managed by a given storage.
 
 A **storage** is a named space using a particular implementation and a configuration.
 
