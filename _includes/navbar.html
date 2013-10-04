@@ -13,11 +13,13 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li{% if page.title == "Welcome" %} class="active"{% endif %}><a href="/">Home</a></li>
-                        <li{% if section_name == 'details' %} class="active"{% endif %}><a href="/details">Refuge</a></li>
-                        <li{% if section_name == 'news' %} class="active"{% endif %}><a href="/news">News</a></li>
-                        <li{% if section_name == 'download' %} class="active"{% endif %}><a href="/download">Download</a></li>
-                        <li{% if section_name == 'community' %} class="active"{% endif %}><a href="/community">Community</a></li>
+                        <li{% if page.title == "Welcome" %}
+                        class="active"{% endif %}><a href="/" title="Homepage">Home</a></li>
+                        <li{% if section_name == 'details' %}class="active"{% endif %}><a href="/learn_more" title="Learn more">Learn more</a></li>
+                        <li{% if section_name == 'gettingstarted' %} class="active"{% endif %}><a href="/gettingstarted" title="Getting started">Getting started</a></li>
+                        <li{% if section_name == 'community' %} class="active"{% endif %}><a href="/community" title="Community">Community</a></li>
+                        <li{% if section_name == 'documentation' %} class="active"{% endif %}><a href="http://docs.refuge.io" title="Documentation">Documentation</a></li>
+                        <li{% if section_name == 'blog' %} class="active"{% endif %}><a href="/blog" title="blog">Blog</a></li> 
                     </ul>
                 </div><!--/.nav-collapse -->
             </div>
