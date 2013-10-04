@@ -3,25 +3,38 @@ layout: default
 ---
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Refuge | Data should be yours ! - {{ page.title }}</title>
-        <meta name="description" content="description">
-        <meta name="keywords" content="keywords">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+<head>
+  <title>Refuge | Data should be yours ! - {{ page.title }}</title>
+  <meta name="description" content="description">
+  <meta name="keywords" content="keywords">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    <body>
-{% include navbar.html %}
+  <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/vendors/bootstrap/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" type="text/css" href="/resources/css/main.css">
 
-{{ content }}
 
-{% include footer.html %}
 
-        <script src="/vendors/jquery/jquery-2.0.3.min.js"></script>
-        <script src="/vendors/bootstrap/bootstrap.min.js"></script>
-    </body>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="/vendors/bootstrap/assets/js/html5shiv.js"></script>
+    <script src="/vendors/bootstrap/assets/js/respond.min.js"></script>
+  <![endif]-->
+
+
+
+</head>
+<body>
+  {% include navbar.html %}
+
+  {{ content }}
+
+
+  {% include footer.html %}
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" ></script>
+  <script src="/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
 </html>

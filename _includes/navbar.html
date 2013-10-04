@@ -1,26 +1,29 @@
-        {% capture section_name %}{{ page.path | split:'/' | first }}{% endcapture %}
-        <div class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">The Refuge Project</a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li{% if page.title == "Welcome" %}
-                        class="active"{% endif %}><a href="/" title="Homepage">Home</a></li>
-                        <li{% if section_name == 'details' %}class="active"{% endif %}><a href="/learn_more" title="Learn more">Learn more</a></li>
-                        <li{% if section_name == 'gettingstarted' %} class="active"{% endif %}><a href="/gettingstarted" title="Getting started">Getting started</a></li>
-                        <li{% if section_name == 'community' %} class="active"{% endif %}><a href="/community" title="Community">Community</a></li>
-                        <li{% if section_name == 'documentation' %} class="active"{% endif %}><a href="http://docs.refuge.io" title="Documentation">Documentation</a></li>
-                        <li{% if section_name == 'blog' %} class="active"{% endif %}><a href="/blog" title="blog">Blog</a></li> 
-                    </ul>
-                </div><!--/.nav-collapse -->
-            </div>
-        </div>
+{% capture section_name %}{{ page.path | split:'/' | first }}{% endcapture %}
+
+<nav class="navbar navbar-default navbar-inner navbar-fixed-top" role="navigation">
+
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/" title="Homepage" class="navbar-brand brand logo"><img src="/img/refuge-top-logo.png"></a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li{% if section_name == 'learn_more' %}class="active"{% endif %}><a href="/learn_more" title="Learn more">Learn more</a></li>
+      <li{% if section_name == 'gettingstarted' %} class="active"{% endif %}><a href="/gettingstarted" title="Getting started">Getting started</a></li>
+      <li{% if section_name == 'community' %} class="active"{% endif %}><a href="/community" title="Community">Community</a></li>
+      <li{% if section_name == 'documentation' %} class="active"{% endif %}><a href="http://docs.refuge.io" title="Documentation">Documentation</a></li>
+      <li{% if section_name == 'blog' %} class="active"{% endif %}><a href="/blog" title="blog">Blog</a></li> 
+    </ul>
+  </div><!-- /.navbar-collapse -->
+
+
+</nav>
+
