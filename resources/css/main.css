@@ -1,59 +1,17 @@
 
-body {
-    padding-top: 70px;
-    font-family:'Lato', helvetica, sans-serif;
-    color:rgb(151, 144, 135);
-    background:url('/img/bg-body.png') repeat center 2px;min-width:980px;}
 
-/* ---------------- COMMON ---------------- */
-::-moz-selection { /* Pour firefox */
-    background:#ff5728;
-color:#fff;}
-::selection { /* Pour les autres */
-    background:#ff5728;
-    color:#fff;
+body { 
+    padding-top: 80px;
+    background:url('/img/bg-body.png') repeat center 2px; 
+    min-width:980px;
 }
 
-
-nav {
-    background-color:#362b39;
-    border-top:2px solid #ff5728;
-}
-
-
-.navbar-inner {
-    background: #362b39;
-}
-
-
-nav ul li a {
-    color:#99889e;
-
-}
-
-nav ul li a:hover,
-ul.nav li.active a {
-    color:#fff;
-    background-color:rgba(96, 81, 100, 1);
-}
-ul.nav li.selected a {
-    background-color:rgba(255, 87, 40, 1);
-}
-
-p a {
-  text-decoration: underline;
-}
-p a.btn {
-  text-decoration: none;
-}
 .brand.logo a {
   text-decoration: none;
 }
 
-.navbar .navbar-inner {
-  padding-right: 0px;
-  padding-left: 0px;
-}
+
+
 .navbar .brand {
   margin-left: 0px;
   float: left;
@@ -64,17 +22,11 @@ p a.btn {
 }
 
 
-/* generic page copy styles */
-.copy-headline h2 {
+.navbar .nav li a {
+  padding: 25px 17px 25px;
+}
+
+
+.copy-headline h1 {
   font-size: 21px;
-}
-
-footer {
-    background:rgb(253, 251, 239);
-}
-
-.copyright {
-    border-top:1px solid rgb(240, 232, 223);
-    padding:30px 0 20px 0;
-    margin:0 30px;
 }
