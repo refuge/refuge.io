@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-    <section class="page">
-        <div class="whole">
-            <article>
-                <h2>{{ page.title }}</h2>
-                <div class="article-infos">
-                    <span>Published on {{ page.date | date_to_long_string }} by {{ page.author }}</span>
-                    <span>{{ page.tags | array_to_sentence_string }}</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>{{ page.title }}</h2>
+                    <div class="article-infos">
+                        <span>Published on {{ page.date | date_to_long_string }} by {{ page.author }}</span>
+                        <span>{{ page.tags | array_to_sentence_string }}</span>
+                    </div>
+                    {{ content }}
                 </div>
-                {{ content }}
-            </article>
+            </div>
         </div>
-    </section>

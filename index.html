@@ -2,70 +2,92 @@
 layout: default
 title: Welcome
 ---
-            <section class="splash">
-                <nav>
-                <a href="#" class="back"><div></div><span></span></a>
-                <a href="#" class="next"><div></div><span></span></a>
-                </nav>
-
-                <div class="wrap-slides">
-                    <article class="article-box">
-                        <div class="wrap">
-                            <h2>Data should be yours!</h2>
-                            <p>Store, share and discover more data safely anywhere you need with <strong>Refuge</strong>.</p>
-                            <a href="/details" class="a-btn-big">More details</a>
+        <!-- Carousel
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
                         </div>
-                        <img src="/img/img-box.png" alt="Img Box">
-                    </article>
-                    <!-- share data, discover data nodes, process them -->
+                    </div>
                 </div>
-            </section>
+                <div class="item">
+                    <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+        </div><!-- /.carousel -->
 
-            <section class="bestpoints">
-                <div class="one-third">
-                    <article>
-                    <h2>About <span>Refuge</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h2>About <span class="text-muted">Refuge</span></h2>
                     <p>
-                    The Refuge Project aims to provide a fully decentralized and opensource data platform with the following features:
-                    <ul>
-                        <li>&gt; A way to store, sync and share data</li>
-                        <li>&gt; Over and On the web</li>
-                        <li>&gt; Opensource</li>
-                        <li>&gt; Built in Erlang</li>
-                    </ul>
+                        The Refuge Project aims to provide a fully decentralized and opensource data platform with the following features:
+                        <ul>
+                            <li>A way to store, sync and share data</li>
+                            <li>Over and On the web</li>
+                            <li>Opensource</li>
+                            <li>Built in Erlang</li>
+                        </ul>
                     </p>
                     <div class="actions">
-                        <a href="/details" class="a-btn-small">Read more</a>
+                        <a href="/details" class="btn btn-default">Read more &raquo;</a>
                     </div>
-                    </article>
                 </div>
-                <div class="one-third">
-                    <article>
-                    <h2>Latest <span>news</span></h2>
+                <div class="col-lg-4">
+                    <h2>Latest <span class="text-muted">news</span></h2>
                     <ul class="list-items">
                         {% for post in site.posts limit:2 %}
                         <li>
-                        <a href="{{ post.url }}">
-                            <h3>{{ post.title }}</h3>
-                            <span class="date">{{ post.date | date_to_string }}</span>
-                            {{ post.excerpt }}
-                        </a>
+                            <a href="{{ post.url }}">
+                                <h3>{{ post.title }}</h3>
+                                <span class="date">{{ post.date | date_to_string }}</span>
+                                {{ post.excerpt }}
+                            </a>
                         </li>
                         {% endfor %}
                     </ul>
                     <div class="actions">
-                        <a href="/news" class="a-btn-small">View more</a>
+                        <a href="/news" class="btn btn-default">View more &raquo;</a>
                     </div>
-                    </article>
                 </div>
-                <div class="one-third">
-                    <article class="article-version">
-                    <h2>Lastest <span>version</span></h2>
+                <div class="col-lg-4">
+                    <h2>Lastest <span class="text-muted">version</span></h2>
                     <p>We are currently working hard to provide a fully
                     functional release very soon.</p> 
                     <div class="actions">
-                        <a href="/download" class="a-btn-small">More</a>
+                        <a href="/download" class="btn btn-default">More &raquo;</a>
                     </div>
-                    </article>
                 </div>
-            </section>
+            </div>
+        </div>
