@@ -36,3 +36,31 @@ body {
     padding: 25px 20px 15px;
 
 }
+
+
+
+/* =======================
+   Social footer
+======================= */
+.social {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.social .twitter,
+.social .github,
+.social .googleplus {
+  background: url("/img/footer-links.png") no-repeat transparent;
+  display: inline-block;
+  height: 35px;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 35px;
+  margin-right: 10px;
+}
+.social .twitter {
+  background-position: 0px 2px;
+}
+.social .github {
+  background-position: -59px 2px;
+}
+
