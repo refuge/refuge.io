@@ -10,17 +10,21 @@ body {
   text-decoration: none;
 }
 
+.main-banner h1 {
+    font-size: 160%;
+    text-align: center;
+}
 
 
 .navbar .brand {
-  margin-left: 0px;
-  float: left;
-  display: block;
-  margin-right: 30px;
+    margin-left: 0px;
+    float: left;
+    display: block;
+    margin-right: 30px;
 
 }
 .brand.logo a {
-  color: white;
+    color: white;
 }
 
 .navbar-default  {
@@ -28,7 +32,7 @@ body {
 }
 
 .navbar-default  ul li a {
-line-height: 30px;
-padding: 25px 20px 15px;
+    line-height: 30px;
+    padding: 25px 20px 15px;
 
 }
