@@ -16,6 +16,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
+      <li{% if page.overview %} class="active"{% endif %}><a href="/" title="Home">Home</a></li>
       <li{% if section_name == 'learn_more' %} class="active"{% endif %}><a href="/learn_more" title="Learn more">Learn more</a></li>
       <li{% if section_name == 'gettingstarted' %} class="active"{% endif %}><a href="/gettingstarted" title="Getting started">Getting started</a></li>
       <li{% if section_name == 'community' %} class="active"{% endif %}><a href="/community" title="Community">Community</a></li>

@@ -1,7 +1,7 @@
 
 
 body { 
-    padding-top: 80px;
+    padding-top: 70px;
     background:url('/img/bg-body.png') repeat center 2px; 
     min-width:980px;
 }
@@ -16,17 +16,19 @@ body {
   margin-left: 0px;
   float: left;
   display: block;
+  margin-right: 30px;
+
 }
 .brand.logo a {
   color: white;
 }
 
-
-.navbar .nav li a {
-  padding: 25px 17px 25px;
+.navbar-default  {
+    border-top:2px solid #ff5728;
 }
 
+.navbar-default  ul li a {
+line-height: 30px;
+padding: 25px 20px 15px;
 
-.copy-headline h1 {
-  font-size: 21px;
 }
