@@ -42,6 +42,8 @@ section:after {content:'';display:block;clear:both;}
 /* columns */
 .columns:after {content:'';display:block;clear:both;}
 .whole {width:100%;clear:both;}
+.lead { font-size: 21px; }
+.center-text {width:80%; margin-left:auto; margin-right: auto;}
 .one-half {width:50%;float:left;}
 .one-third {width:33.33333%;float:left;}
 .two-third {width:66.6666%;float:left;}
@@ -91,6 +93,8 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article a:hover {text-decoration:underline;}
 .page article p.p-big {font-size:150%;margin-bottom:40px;}
 .page article img {display:block;width:100%;height:auto;margin-bottom:20px;}
+.page article img.intro {display:block;width:80%;height:auto;margin-bottom:20px; margin-left:auto; margin-right: auto;}
+
 .page article ul {padding:20px 40px;}
 .page article ul li {margin-bottom:10px;padding:0 0 0 30px;position:relative;}
 .page article ul li:before {content:'°';display:block;position:absolute;top:-2px;left:0;color:#ff5728;font-size:180%;font-weight:400;}
@@ -147,7 +151,7 @@ ul.list-pages li a.a-btn-small {display:block;margin:0;}
 /* header */
 .header {height:70px;background-color:#362b39;padding:0px 20px;position:relative;border-top:2px solid #ff5728;}
 .header .a-backtohome {display:block;height:50px;padding:10px;width:146px;background:url('../img/a-backtohome.png') no-repeat center center;}
-.header nav {position:absolute;right:20px;top:0px;height:70px;}
+.header nav {position:absolute; right:20px; top:0px;height:70px;}
 .header nav .btn-menu-resp {display:none;}
 .header nav ul li {float:left;padding:0 0px;position:relative;}
 .header nav ul li a {display:block;height:30px;line-height:30px;padding:30px 20px 10px;color:#99889e;font-size:100%;}

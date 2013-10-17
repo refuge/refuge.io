@@ -2,70 +2,70 @@
 layout: default
 title: Welcome
 ---
-            <section class="splash">
-                <nav>
-                <a href="#" class="back"><div></div><span></span></a>
-                <a href="#" class="next"><div></div><span></span></a>
-                </nav>
+<section class="splash">
+  <nav>
+    <a href="#" class="back"><div></div><span></span></a>
+    <a href="#" class="next"><div></div><span></span></a>
+  </nav>
 
-                <div class="wrap-slides">
-                    <article class="article-box">
-                        <div class="wrap">
-                            <h2>Data should be yours!</h2>
-                            <p>Store, share and discover more data safely anywhere you need with <strong>Refuge</strong>.</p>
-                            <a href="/details" class="a-btn-big">More details</a>
-                        </div>
-                        <img src="/img/img-box.png" alt="Img Box">
-                    </article>
-                    <!-- share data, discover data nodes, process them -->
-                </div>
-            </section>
+  <div class="wrap-slides">
+    <article class="article-box">
+      <div class="wrap">
+        <h2>Data should be yours!</h2>
+        <p>Store, share and discover more data safely anywhere you need with <strong>Refuge</strong>.</p>
+        <a href="/details" class="a-btn-big">More details</a>
+      </div>
+      <img src="/img/img-box.png" alt="Img Box">
+    </article>
+    <!-- share data, discover data nodes, process them -->
+  </div>
+</section>
 
-            <section class="bestpoints">
-                <div class="one-third">
-                    <article>
-                    <h2>About <span>Refuge</span></h2>
-                    <p>
-                    The Refuge Project aims to provide a fully decentralized and opensource data platform with the following features:
-                    <ul>
-                        <li>&gt; A way to store, sync and share data</li>
-                        <li>&gt; Over and On the web</li>
-                        <li>&gt; Opensource</li>
-                        <li>&gt; Built in Erlang</li>
-                    </ul>
-                    </p>
-                    <div class="actions">
-                        <a href="/details" class="a-btn-small">Read more</a>
-                    </div>
-                    </article>
-                </div>
-                <div class="one-third">
-                    <article>
-                    <h2>Latest <span>news</span></h2>
-                    <ul class="list-items">
-                        {% for post in site.posts limit:2 %}
-                        <li>
-                        <a href="{{ post.url }}">
-                            <h3>{{ post.title }}</h3>
-                            <span class="date">{{ post.date | date_to_string }}</span>
-                            {{ post.excerpt }}
-                        </a>
-                        </li>
-                        {% endfor %}
-                    </ul>
-                    <div class="actions">
-                        <a href="/news" class="a-btn-small">View more</a>
-                    </div>
-                    </article>
-                </div>
-                <div class="one-third">
-                    <article class="article-version">
-                    <h2>Lastest <span>version</span></h2>
-                    <p>We are currently working hard to provide a fully
-                    functional release very soon.</p> 
-                    <div class="actions">
-                        <a href="/download" class="a-btn-small">More</a>
-                    </div>
-                    </article>
-                </div>
-            </section>
+<section class="bestpoints">
+  <div class="one-third">
+    <article>
+      <h2>About <span>Refuge</span></h2>
+      <p>
+      The Refuge Project aims to provide a fully decentralized and opensource data platform with the following features:
+      <ul>
+        <li>&gt; A way to store, sync and share data</li>
+        <li>&gt; Over and On the web</li>
+        <li>&gt; Opensource</li>
+        <li>&gt; Built in Erlang</li>
+      </ul>
+      </p>
+      <div class="actions">
+        <a href="/details" class="a-btn-small">Read more</a>
+      </div>
+    </article>
+  </div>
+  <div class="one-third">
+    <article>
+      <h2>Latest <span>news</span></h2>
+      <ul class="list-items">
+        {% for post in site.posts limit:2 %}
+        <li>
+        <a href="{{ post.url }}">
+          <h3>{{ post.title }}</h3>
+          <span class="date">{{ post.date | date_to_string }}</span>
+          {{ post.excerpt }}
+        </a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="actions">
+        <a href="/news" class="a-btn-small">View more</a>
+      </div>
+    </article>
+  </div>
+  <div class="one-third">
+    <article class="article-version">
+      <h2>Lastest <span>version</span></h2>
+      <p>We are currently working hard to provide a fully
+      functional release very soon.</p> 
+      <div class="actions">
+        <a href="/download" class="a-btn-small">More</a>
+      </div>
+    </article>
+  </div>
+</section>

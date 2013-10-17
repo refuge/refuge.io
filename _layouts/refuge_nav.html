@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-            <section class="page">
-                <nav class="inline-secondary-nav">
-                    <ul>
-                        <li><a href="/details/index.html" class="a-btn-small{% if page.section == 'intro' %} selected{% endif %}">Intro</a></li>
-                        <li><a href="/details/features.html" class="a-btn-small{% if page.section == 'features' %} selected{% endif %}">Features</a></li>
-                        <li><a href="/details/modules.html" class="a-btn-small{% if page.section == 'modules' %} selected{% endif %}">Modules</a></li>
-                    </ul>
-                </nav>
-                {{ content }}
-            </section>
+<section class="page">
+  <div class="center-text">
+    <nav class="inline-secondary-nav">
+
+      <ul>
+        <li><a href="index.html" class="a-btn-small{% if page.section == 'intro' %} selected{% endif %}">Intro</a></li>
+        <li><a href="platform.html" title="Refuge platform" class="a-btn-small{% if page.section =='platform' %} selected{% endif %}">Refuge platform </a></li>
+        <li><a href="box.html" title="Refuge box" class="a-btn-small{% if page.section == 'box' %} selected{% endif %}">Refuge box</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  {{ content }}
+</section>

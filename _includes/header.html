@@ -1,14 +1,16 @@
-            {% capture section_name %}{{ page.path | split:'/' | first }}{% endcapture %}
-            <header class="header">
-                <a href="/" class="a-backtohome"></a>
-                <nav id="navbar">
-                    <div class="btn-menu-resp"></div>
-                    <ul onclick="return true">
-                        <li{% if page.title == "Welcome" %} class="selected"{% endif %}><a href="/">Home</a></li>
-                        <li{% if section_name == 'details' %} class="selected"{% endif %}><a href="/details">Refuge</a></li>
-                        <li{% if section_name == 'news' %} class="selected"{% endif %}><a href="/news">News</a></li>
-                        <li{% if section_name == 'download' %} class="selected"{% endif %}><a href="/download">Download</a></li>
-                        <li{% if section_name == 'community' %} class="selected"{% endif %}><a href="/community">Community</a></li>
-                    </ul>
-                </nav>
-            </header>
+{% capture section_name %}{{ page.path | split:'/' | first }}{% endcapture %}
+<header class="header">
+  <a href="/" class="a-backtohome"></a>
+  <nav id="navbar">
+    <div class="btn-menu-resp"></div>
+    <ul onclick="return true">
+      <li{% if page.title == "Welcome" %} class="selected"{% endif %}><a href="/">Home</a></li>
+      <li{% if section_name == 'learnmore' %} class="selected"{% endif %}><a href="/learnmore">Learn more</a></li>
+      <li{% if section_name == 'gettingstarted' %} class="selected"{% endif %}><a href="/gettingstarted" title="Getting started">Getting started</a></li>
+      <li{% if section_name == 'community' %} class="selected"{% endif %}><a href="/community" title="Community">Community</a></li>
+      <li><a href="http://docs.refuge.io" title="Documentation">Documentation</a></li>
+      <li{% if section_name == 'blog' %} class="selected"{% endif %}><a href="/blog" title="Blog">Blog</a></li>
+
+    </ul>
+  </nav>
+</header>
