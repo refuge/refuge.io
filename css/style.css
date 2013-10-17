@@ -95,7 +95,7 @@ input[type=submit]:hover {background-color:rgba(255, 87, 40, 1);color:#fff;}
 .page article img {display:block;width:100%;height:auto;margin-bottom:20px;}
 .page article img.intro {display:block;width:80%;height:auto;margin-bottom:20px; margin-left:auto; margin-right: auto;}
 
-.page article img.caption {display:block;width:50%;height:auto;margin-bottom:20px; margin-left:auto; margin-right: auto;}
+.page article img.caption {display:block;width:50%;height:auto;margin-bottom:20px; margin-left:auto; margin-right: auto; margin-top: 20px;}
 
 .page article ul {padding:20px 40px;}
 .page article ul li {margin-bottom:10px;padding:0 0 0 30px;position:relative;}
