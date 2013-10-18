@@ -3,34 +3,22 @@ layout: default
 title: Refuge blog
 ---
 <section class="page">
-  <div class="two-third">
+  <div class="center-text">
     <article>
       <div class="columns">
         <div class="whole">
           <h2>Latest <span>news</span></h2>
-          {% for post in site.posts %}
-          <div class="article-overview">
-            <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-            <div class="article-infos">
-              <span>Published on {{ post.date | date_to_long_string }} by {{ post.author }}</span>
-              <span>{{ post.tags | array_to_sentence_string }}</span>
-            </div>
-            <p>{{ post.content }}</p>
-          </div>
-          {% endfor %}
+          <ul class="posts">
+            {% for post in site.posts %}
+            <li>
+            <span class="a-btn-small">{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+
+            <p>{{ post.excerpt }}</p>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
       </div>
     </article>
-  </div>
-  <div class="one-third">
-    <div class="sidebar">
-      <h2>News by <span>tags</span></h2>
-      <nav class="secondary-nav">
-        {% for ptag in site.tags %}
-        <!--<a href="/news/by-tag/{{ ptag | first | slugize }}" class="a-btn-small" style="font-size: {{ ptag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%">{{ ptag | first }}</a>-->
-        <a href="#" class="a-btn-small" style="font-size: {{ ptag | last | size | times: 200 | divided_by: site.tags.size | plus: 70 }}%">{{ ptag | first }}</a>
-        {% endfor %}
-      </nav>
-    </div>
   </div>
 </section>
