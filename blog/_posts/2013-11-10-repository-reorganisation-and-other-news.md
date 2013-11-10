@@ -20,7 +20,7 @@ repositories have been redispatched between 3 Github organisations:
 of our temptatives...
 - [Refuge incubator](https://github.com/refuge-incubator): All the
   projects of refuge will start here. If a project is considered enough
-stable and in phase with the project will be moved to the main refuge
+stable and in phase with the project, it will be moved to the main refuge
 organisation
 - [Refuge](https://github.com/refuge): The main organisation. ALl
   maintened refuge products will be found there.
