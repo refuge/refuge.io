@@ -29,7 +29,7 @@ There is still some work in progress in moving the code right now. For
 example once the [new refactored
 coffer](https://github.com/refuge-incubator/coffer) will be OK in the
 incubator, old code in the refuge organisation will be moved to the
-attic. Also we will removed dependencies we don't fork (to maintain
+attic. Also we will remove dependencies we don't fork (to maintain
 specific patches) from the main repository. But so far, most is already
 done.
 
