@@ -2,7 +2,7 @@
 layout: post
 title: Repository reorganisation and other news
 author: benoitc
-tags: org
+tags: refuge
 ---
 
 Good news, during the next two months I will be able to dedicace more
