@@ -18,7 +18,7 @@ repositories have been redispatched between 3 Github organisations:
 - [Refuge attic](https://github.com/refuge-attic): all dead and
   unmaintained codes have been moved there. This is where you will find all
 of our temptatives...
-- [Refuge incubator](https://github.com/refuge-incubator]): All the
+- [Refuge incubator](https://github.com/refuge-incubator): All the
   projects of refuge will start here. If a project is considered enough
 stable and in phase with the project will be moved to the main refuge
 organisation
