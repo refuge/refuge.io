@@ -5,10 +5,10 @@ author: benoitc
 tags: refuge
 ---
 
-Good news, during the next two months I will be able to dedicace more
+Good news, during the next two months I will be able to dedicate more
 time to the Refuge project. Which means that a lot of code will be
 released. Coffer will be finally released this month as an
-easy way to store, sync and share any content in a decentralized
+easy way to store, sync and share any content in a decentralised
 manner.
 
 In the process, I decided to reorganise a little the project and make easier
