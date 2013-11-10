@@ -48,4 +48,4 @@ mailing lists.
 
 Enjoy!
 
--- Benoit Chesneau and the refuge team.
+-- Benoit Chesneau and the Refuge team.
