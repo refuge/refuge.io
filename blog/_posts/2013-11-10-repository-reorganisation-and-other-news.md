@@ -22,7 +22,7 @@ of our temptatives...
   projects of refuge will start here. If a project is considered enough
 stable and in phase with the project, it will be moved to the main refuge
 organisation
-- [Refuge](https://github.com/refuge): The main organisation. ALl
+- [Refuge](https://github.com/refuge): The main organisation. All
   maintened refuge products will be found there.
 
 There is still some work in progress in moving the code right now. For
