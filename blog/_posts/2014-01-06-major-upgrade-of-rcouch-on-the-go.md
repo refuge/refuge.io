@@ -11,7 +11,7 @@ me busy the last 4 days.
 
 Last year, I decided to merge rcouch 0.7x (current release) in Apache CouchDB.
 rcouch has been written/updated over 2 years with the help of Nicolas
-(@nrdufour) andothers, adding new features, trying some changes, sometimes
+(@nrdufour) and others, adding new features, trying some changes, sometimes
 rolling back to an old feature because of some bug discovered, sometimes just
 because another way to do the feature was found. At some point some rewrite
 happened, merging some changes in an atomic way to become the current rcouch
@@ -47,7 +47,7 @@ details soon.
 I was too tired to really start last year and the work really started on last
 friday. The changes in the couchdb branch will be done tomorrow. This branch
 will become **rcouch 1.0.0**. After that the work on rcouch 2 will start. One of
-the resolution I took for this year is to be more verbose, so I and other will
+the resolution I took for this year is to be more verbose, so I and others will
 keep you updated more often about what happen in refuge with a weekly blog
 post.
 
