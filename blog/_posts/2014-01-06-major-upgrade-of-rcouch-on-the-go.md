@@ -1,6 +1,11 @@
-A Major upgrade of rcouch on the go. 
+---
+layout: post
+title: A major upgrade of rcouch on the go
+author: benoitc
+tags: rcouch, refuge
+---
 
-A Major upgrade of rcouch is on the go. I am still fixing the latest bits but I
+A major upgrade of rcouch is on the go. I am still fixing the latest bits but I
 couldn't resist to share some details of what keep me busy the last 4 days.
 
 Last year, I decided to merge rcouch 0.7x (current release) in couchdb. rcouch
