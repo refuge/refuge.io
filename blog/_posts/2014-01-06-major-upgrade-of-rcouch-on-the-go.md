@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A major upgrade of rcouch on the go
+title: Major upgrade of rcouch on the go
 author: benoitc
 tags: rcouch, refuge
 ---
