@@ -24,6 +24,6 @@ and the wiki is available at:
 
 All the repositories related to rcouch on
 [https://github.com/refuge](https://github.com/refuge) will
-be removed April 15, 2014, don't forget to update your links. Only the
+be removed on April 15, 2014, don't forget to update your links. Only the
 source related to the [refuge platform](http://refuge.io/learnmore/)
 will be kept and updated on [https://github.com/refuge](https://github.com/refuge).
