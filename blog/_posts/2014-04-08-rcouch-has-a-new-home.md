@@ -27,3 +27,7 @@ All the repositories related to rcouch on
 be removed on April 15, 2014, don't forget to update your links. Only the
 source related to the [refuge platform](http://refuge.io/learnmore/)
 will be kept and updated on [https://github.com/refuge](https://github.com/refuge).
+
+**UPDATE**: repository has been moved transparently using the github
+features. Users will be redirected to the new repositories locations and
+git will use the new address automatically.
