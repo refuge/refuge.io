@@ -22,7 +22,8 @@ and the wiki is available at:
 
 [https://wiki.refuge.io/display/RCOUCH/rcouch](https://wiki.refuge.io/display/RCOUCH/rcouch)
 
-All the repositories related to rcouch on https://github.com/refuge will
+All the repositories related to rcouch on
+[https://github.com/refuge](https://github.com/refuge) will
 be removed April 15, 2014, don't forget to update your links. Only the
 source related to the [refuge platform](http://refuge.io/learnmore/)
 will be kept and updated on https://github.com/refuge.
